@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define PRECISION 32
+#define PRECISION 5
 
 int main()
 {
-    double number = 0.65;
+    double number = 0.1;
     int remainder;
     char *digits = malloc(sizeof(char) * PRECISION);
     for (int i = 0; i <= PRECISION; i++)
@@ -23,7 +23,6 @@ int main()
         {
             digits[i] = '0';
         }
-        printf("%.17f", number);
     }
     printf("\n0.%s", digits);
 }
